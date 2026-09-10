@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "public": true,
-  "buildCommand": null,
-  "outputDirectory": "public",
-  "devCommand": null,
-  "installCommand": null
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ]
 }
