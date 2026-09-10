@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Become a member of East Toronto Community Legal Services - Join our community and help shape our work">
+    <title>Membership - East Toronto Community Legal Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a3a52;
+            background-color: #f5f7fa;
+        }
+
+        header {
+            background-color: #1a3a52;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #0066cc;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav li {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            padding: 1rem;
+            color: #1a3a52;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #f5f7fa;
+            border-bottom-color: #0066cc;
+            outline: none;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 2rem 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #1a3a52;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1a3a52;
+        }
+
+        h3:first-child {
+            margin-top: 0;
+        }
+
+        .highlight-box {
+            background-color: #e8f0f7;
+            padding: 1.5rem;
+            border-left: 4px solid #0066cc;
+            margin: 1.5rem 0;
+            border-radius: 2px;
+        }
+
+        .highlight-box p {
+            margin: 0.5rem 0;
+        }
+
+        .highlight-box strong {
+            color: #1a3a52;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+            padding: 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            line-height: 1.7;
+        }
+
+        .mission-box {
+            background-color: #f5f7fa;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+            line-height: 1.8;
+        }
+
+        .mission-box p {
+            margin: 0.75rem 0;
+        }
+
+        footer {
+            background-color: #1a3a52;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+        }
+
+        .footer-credit {
+            font-size: 0.85rem;
+            opacity: 0.85;
+            margin-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 1rem;
+        }
+
+        .legal-aid-logo {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover,
+        a:focus {
+            color: #0052a3;
+            text-decoration: underline;
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        button:focus,
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                min-width: auto;
+                flex: none;
+            }
+
+            nav a {
+                border-bottom: none;
+                border-right: 3px solid transparent;
+            }
+
+            nav a:hover,
+            nav a:focus {
+                border-right-color: #0066cc;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            main {
+                padding: 1rem 0.5rem;
+            }
+
+            section {
+                padding: 1.5rem 1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.25rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            body {
+                font-size: 15px;
+            }
+        }
+
+        @media print {
+            nav {
+                display: none;
+            }
+
+            section {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>East Toronto Community Legal Services</h1>
+        <p>Free legal help for low-income residents</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Intro -->
+        <section>
+            <h2>Become a Member</h2>
+            <p><strong>Membership is free.</strong> As a member, you help shape what we do and have a voice in our community.</p>
+
+            <div class="highlight-box">
+                <p><strong>To become a member, you must:</strong></p>
+                <ul style="margin-left: 1rem;">
+                    <li>Be at least 18 years old</li>
+                    <li>Live or work in our catchment area (bounded by Don River, Victoria Park, Danforth, and Lake Ontario)</li>
+                    <li>Support our mission and values</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section>
+            <h2>Our Mission</h2>
+            <p>Our mission guides everything we do. Make sure you agree with it before joining:</p>
+
+            <div class="mission-box">
+                <p><strong>East Toronto Community Legal Services Inc. is a community legal resource centre with a human face.</strong></p>
+
+                <p>• We serve people of modest income in our catchment area on an individual case-by-case basis</p>
+
+                <p>• We serve the community generally by providing outreach, legal education, and community organizing to agencies, individuals, and other groups in our community</p>
+
+                <p>• We balance providing legal help to individuals with taking on test cases and important law reform work</p>
+
+                <p>• We are responsive to the diverse cultural communities in our catchment area</p>
+
+                <p>• We network with other agencies in the community to help clients access other services they need</p>
+
+                <p>• We work to identify and understand the legal needs of our community</p>
+            </div>
+        </section>
+
+        <!-- Apply for Membership -->
+        <section>
+            <h2>How to Apply</h2>
+            <p>To become a member, please:</p>
+
+            <ol style="margin-top: 1rem;">
+                <li><strong>Fill out a membership application form.</strong> You can pick one up at our office or contact us to request one by phone or email.</li>
+                <li><strong>Return the form to us.</strong> Mail it, bring it in person, or ask about other ways to submit it.</li>
+                <li><strong>You're a member!</strong> We'll confirm your membership and add you to our mailing list.</li>
+            </ol>
+
+            <div class="highlight-box">
+                <p><strong>Questions?</strong> Call us at <strong>416-461-8102</strong> and we'll help you through the process.</p>
+            </div>
+        </section>
+
+        <!-- Board Members -->
+        <section>
+            <h2>Become a Board Member</h2>
+            <p>Board members make important decisions about how we serve the community. We elect new board members each year from our membership.</p>
+
+            <h3>What Board Members Do</h3>
+            <p>Board members:</p>
+            <ul>
+                <li>Attend monthly meetings (1–2 hours each)</li>
+                <li>Help oversee the clinic's work and finances</li>
+                <li>Work on committees on topics like finance, human resources, or law reform</li>
+                <li>Represent the community's voice in our decisions</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>We need board members from all backgrounds.</strong> We especially welcome members with lived experience of legal problems — many of the issues we help with, you may have faced yourself.</p>
+            </div>
+
+            <h3>Who Can Be a Board Member?</h3>
+            <p>You can be a board member if you are:</p>
+            <ul>
+                <li>A member of East Toronto Community Legal Services</li>
+                <li>Willing to volunteer 5–6 hours each month</li>
+                <li>Interested in serving your community</li>
+            </ul>
+
+            <h3>How to Apply</h3>
+            <p>If you are interested in becoming a board member, please contact us at <strong>416-461-8102</strong>. We can tell you more about what's involved and answer your questions.</p>
+        </section>
+
+        <!-- Why Join -->
+        <section>
+            <h2>Why Become a Member?</h2>
+            <ul>
+                <li><strong>Have a voice:</strong> Members help elect our board and help guide our priorities</li>
+                <li><strong>Get involved:</strong> Serve on committees or volunteer with us</li>
+                <li><strong>Stay informed:</strong> We keep members updated on our work and upcoming events</li>
+                <li><strong>It's free:</strong> There are no membership fees</li>
+                <li><strong>Support your community:</strong> Help a clinic that serves low-income people in East Toronto</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2>Get Started</h2>
+            <p>Ready to become a member or interested in the board? Contact us:</p>
+            <p><strong>Phone:</strong> 416-461-8102<br>
+            <strong>Address:</strong> 1320 Gerrard Street East, Toronto, ON M4L 3X1</p>
+            <p><strong>Hours:</strong><br>
+            Monday–Tuesday, Thursday–Friday: 9:30 am–12:30 pm, 1:30 pm–4:00 pm<br>
+            Wednesday: 9:30 am–12:30 pm</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>East Toronto Community Legal Services Inc.</strong></p>
+        <p>1320 Gerrard Street East, Toronto, ON M4L 3X1</p>
+        <p>Phone: 416-461-8102 | Fax: 416-461-7497</p>
+        <div class="legal-aid-logo">
+            <p>Funded by Legal Aid Ontario</p>
+        </div>
+        <div class="footer-credit">
+            <p>Built by Teambotics & NikDesign</p>
+        </div>
+    </footer>
+</body>
+</html>

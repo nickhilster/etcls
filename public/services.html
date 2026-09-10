@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services offered by East Toronto Community Legal Services - Legal help in multiple areas">
+    <title>Our Services - East Toronto Community Legal Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a3a52;
+            background-color: #f5f7fa;
+        }
+
+        header {
+            background-color: #1a3a52;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #0066cc;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: white;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav li {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            padding: 1rem;
+            color: #1a3a52;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #f5f7fa;
+            border-bottom-color: #0066cc;
+            outline: none;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 2rem 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #1a3a52;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1a3a52;
+        }
+
+        h3:first-child {
+            margin-top: 0;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #1a3a52;
+            font-weight: 600;
+        }
+
+        .service-detail {
+            background-color: #f5f7fa;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #0066cc;
+            border-radius: 2px;
+        }
+
+        .service-detail h4 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+
+        .service-detail p {
+            margin: 0.5rem 0;
+        }
+
+        .contact-info {
+            background-color: #e8f0f7;
+            padding: 1.5rem;
+            border-left: 4px solid #0066cc;
+            margin: 1.5rem 0;
+            border-radius: 2px;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+            padding: 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            line-height: 1.7;
+        }
+
+        footer {
+            background-color: #1a3a52;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+        }
+
+        .footer-credit {
+            font-size: 0.85rem;
+            opacity: 0.85;
+            margin-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 1rem;
+        }
+
+        .legal-aid-logo {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover,
+        a:focus {
+            color: #0052a3;
+            text-decoration: underline;
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        button:focus,
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                min-width: auto;
+                flex: none;
+            }
+
+            nav a {
+                border-bottom: none;
+                border-right: 3px solid transparent;
+            }
+
+            nav a:hover,
+            nav a:focus {
+                border-right-color: #0066cc;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            main {
+                padding: 1rem 0.5rem;
+            }
+
+            section {
+                padding: 1.5rem 1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.25rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            body {
+                font-size: 15px;
+            }
+        }
+
+        @media print {
+            nav {
+                display: none;
+            }
+
+            section {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>East Toronto Community Legal Services</h1>
+        <p>Free legal help for low-income residents</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Main Services -->
+        <section>
+            <h2>What We Can Help With</h2>
+            <p>We provide free legal advice and representation in the following areas. If you need help with something not listed, call us at 416-461-8102.</p>
+
+            <div class="service-detail">
+                <h4>Ontario Works & ODSP</h4>
+                <p>Questions about Ontario Works or Ontario Disability Support Program (ODSP) benefits? We can advise you on your rights and help with appeals.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Landlord & Tenant Issues</h4>
+                <p>Having problems with your landlord or rental home? We can advise you on your rights as a tenant, lease agreements, eviction, repairs, and more.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Immigration</h4>
+                <p>Need help understanding Canadian immigration laws or your status? We can provide legal advice on immigration matters.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Employment Insurance & Employment Law</h4>
+                <p>Trouble with Employment Insurance (EI)? Questions about your rights at work? We can advise you on employment law and EI benefits.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Canada Pension Plan (CPP)</h4>
+                <p>Questions about your Canada Pension Plan benefits or CPP disability? We can provide legal advice on CPP matters.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Criminal Injuries Compensation</h4>
+                <p><em>Advice only.</em> If you have been injured by a crime, we can advise you on compensation options available to you.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Family Violence</h4>
+                <p>Experiencing family violence? We can advise you on restraining orders, protection orders, family law rights, and other options available to you.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Consumer Law</h4>
+                <p>Been scammed or sold faulty goods? Have a dispute with a merchant or creditor? We can advise you on your consumer rights.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Small Claims Court</h4>
+                <p><em>Advice only.</em> Have a dispute involving money owed to you? We can advise you about taking a case to Small Claims Court.</p>
+            </div>
+
+            <div class="service-detail">
+                <h4>Certified True Copies & Affidavits</h4>
+                <p>Need a document certified as a true copy or signed as an affidavit? We offer this service in limited areas of law. Call for details.</p>
+            </div>
+        </section>
+
+        <!-- Special Clinics -->
+        <section>
+            <h2>Special Clinics & Services</h2>
+
+            <h3>Chinese-Speaking Legal Clinic</h3>
+            <p>We run a clinic for Chinese-speaking clients <strong>every Tuesday afternoon from 1:30 pm to 4:00 pm</strong>. No appointment needed — just come in or call 416-461-8102.</p>
+
+            <h3>Multilingual Support</h3>
+            <p>We can arrange interpretation in many languages. Call us at 416-461-8102 to ask about interpretation services for your language.</p>
+        </section>
+
+        <!-- Additional Services -->
+        <section>
+            <h2>More Than Legal Advice</h2>
+
+            <h3>Free Legal Workshops</h3>
+            <p>We hold free public legal education seminars and workshops on topics important to our community. Topics cover benefits, housing, employment, family law, and more. Call us for information about upcoming workshops.</p>
+
+            <h3>Multilingual Pamphlets</h3>
+            <p>We have free legal information pamphlets available in many languages. These cover your legal rights in areas like housing, benefits, employment, and family law.</p>
+
+            <h3>Law Reform & Test Cases</h3>
+            <p>We participate in law reform initiatives and test case litigation to change laws and improve legal rights for people in our community.</p>
+
+            <h3>Community Development & Tenant Organizing</h3>
+            <p>We help community groups and tenant organizations get stronger and have a voice in decisions that affect them.</p>
+        </section>
+
+        <!-- Call to Action -->
+        <section>
+            <h2>Ready to Get Help?</h2>
+            <p>Visit us during our intake hours or call ahead to book an appointment.</p>
+
+            <div class="contact-info">
+                <p><strong>Phone:</strong> 416-461-8102</p>
+                <p><strong>Address:</strong><br>
+                1320 Gerrard Street East<br>
+                Toronto, ON M4L 3X1</p>
+                <p><strong>Hours:</strong><br>
+                Monday–Tuesday, Thursday–Friday: 9:30 am–12:30 pm, 1:30 pm–4:00 pm<br>
+                Wednesday: 9:30 am–12:30 pm (closed afternoon)</p>
+                <p style="margin-top: 1rem; font-size: 0.95rem;"><em>Please call ahead before coming — we sometimes have to reschedule appointments.</em></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>East Toronto Community Legal Services Inc.</strong></p>
+        <p>1320 Gerrard Street East, Toronto, ON M4L 3X1</p>
+        <p>Phone: 416-461-8102 | Fax: 416-461-7497</p>
+        <div class="legal-aid-logo">
+            <p>Funded by Legal Aid Ontario</p>
+        </div>
+        <div class="footer-credit">
+            <p>Built by Teambotics & NikDesign</p>
+        </div>
+    </footer>
+</body>
+</html>
